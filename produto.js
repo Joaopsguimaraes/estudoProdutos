@@ -12,7 +12,7 @@ export class Produto {
         this.venda = novoPreco
     }
     vendaMargem(margemDesejada){
-        this.venda = this.custo * parseInt((margemDesejada/100))
+        this.venda = this.custo * parseFloat((margemDesejada/100))
         //validar formula precificacao por margem, será informado pelo usuario quantos % será o preço de venda
     }
 }
